@@ -267,7 +267,7 @@ export default function GiftList({
             </div>
 
             {selectedGifts.length > 0 && (
-              <div className="fixed bottom-0 left-0 right-0 bg-white shadow-2xl border-t border-gray-200 p-4">
+              <div className="fixed bottom-0 left-0 right-0 bg-white shadow-2xl border-t border-gray-200 p-2">
                 <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
                   <p className="text-gray-700">
                     {selectedGifts.length} presente(s) selecionado(s)
