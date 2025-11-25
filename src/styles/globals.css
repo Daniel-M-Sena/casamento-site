@@ -1,0 +1,291 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #fdf7f4;
+  --foreground: #4a5568;
+  --card: #ffffff;
+  --card-foreground: #4a5568;
+  --popover: #ffffff;
+  --popover-foreground: #4a5568;
+  --primary: #d53f8c;
+  --primary-foreground: #ffffff;
+  --secondary: #f7fafc;
+  --secondary-foreground: #4a5568;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #fdf2f8;
+  --accent-foreground: #be185d;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #ffffff;
+  --input-background: #ffffff;
+  --switch-background: #cbd5e0;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #d53f8c;
+  --radius: 0.75rem;
+  
+  /* Romantic color palette */
+  --rose: #f43f5e;
+  --rose-light: #fb7185;
+  --rose-dark: #e11d48;
+  --pink: #ec4899;
+  --pink-light: #f472b6;
+  --pink-dark: #db2777;
+  --gold: #d4af37;
+  --gold-light: #f7d794;
+  --gold-dark: #b8860b;
+  --lavender: #9ca3f6;
+  --lavender-light: #c4b5fd;
+  --lavender-dark: #7c3aed;
+  --cream: #fef7cd;
+  --blush: #fce7f3;
+  --pearl: #f8fafc;
+}
+
+.dark {
+  --background: #1a1b23;
+  --foreground: #f1f5f9;
+  --card: #262631;
+  --card-foreground: #f1f5f9;
+  --popover: #262631;
+  --popover-foreground: #f1f5f9;
+  --primary: #ec4899;
+  --primary-foreground: #ffffff;
+  --secondary: #1e1e2e;
+  --secondary-foreground: #cbd5e0;
+  --muted: #2d3748;
+  --muted-foreground: #a0aec0;
+  --accent: #553c9a;
+  --accent-foreground: #f1f5f9;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #4a5568;
+  --input: #2d3748;
+  --ring: #ec4899;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Romantic color utilities */
+  --color-rose: var(--rose);
+  --color-rose-light: var(--rose-light);
+  --color-rose-dark: var(--rose-dark);
+  --color-pink: var(--pink);
+  --color-pink-light: var(--pink-light);
+  --color-pink-dark: var(--pink-dark);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --color-lavender: var(--lavender);
+  --color-lavender-light: var(--lavender-light);
+  --color-lavender-dark: var(--lavender-dark);
+  --color-cream: var(--cream);
+  --color-blush: var(--blush);
+  --color-pearl: var(--pearl);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Georgia', 'Times New Roman', serif;
+  }
+}
+
+/**
+ * Romantic typography with serif fonts
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-family: 'Playfair Display', 'Georgia', serif;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', 'Georgia', serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-family: 'Playfair Display', 'Georgia', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+
+    h4 {
+      font-family: 'Playfair Display', 'Georgia', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+
+    p {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    label {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    button {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    input {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+/* Custom romantic utility classes */
+@layer utilities {
+  .text-rose {
+    color: var(--rose);
+  }
+  
+  .text-rose-light {
+    color: var(--rose-light);
+  }
+  
+  .text-pink {
+    color: var(--pink);
+  }
+  
+  .text-gold {
+    color: var(--gold);
+  }
+  
+  .text-lavender {
+    color: var(--lavender);
+  }
+  
+  .bg-rose {
+    background-color: var(--rose);
+  }
+  
+  .bg-pink {
+    background-color: var(--pink);
+  }
+  
+  .bg-gold {
+    background-color: var(--gold);
+  }
+  
+  .bg-lavender {
+    background-color: var(--lavender);
+  }
+  
+  .bg-cream {
+    background-color: var(--cream);
+  }
+  
+  .bg-blush {
+    background-color: var(--blush);
+  }
+  
+  .bg-pearl {
+    background-color: var(--pearl);
+  }
+  
+  .border-rose {
+    border-color: var(--rose);
+  }
+  
+  .border-gold {
+    border-color: var(--gold);
+  }
+  
+  .shadow-romantic {
+    box-shadow: 0 10px 25px -3px rgba(244, 63, 94, 0.1), 0 4px 6px -2px rgba(244, 63, 94, 0.05);
+  }
+  
+  .shadow-gold {
+    box-shadow: 0 10px 25px -3px rgba(212, 175, 55, 0.2), 0 4px 6px -2px rgba(212, 175, 55, 0.1);
+  }
+  
+  .gradient-romantic {
+    background: linear-gradient(135deg, var(--rose-light), var(--pink), var(--lavender-light));
+  }
+  
+  .gradient-sunset {
+    background: linear-gradient(135deg, var(--gold-light), var(--rose-light), var(--pink-light));
+  }
+  
+  .script-font {
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  .serif-font {
+    font-family: 'Playfair Display', 'Georgia', serif;
+  }
+  
+  .floating-hearts::before {
+    content: '💕';
+    position: absolute;
+    animation: float-hearts 3s ease-in-out infinite;
+  }
+  
+  @keyframes float-hearts {
+    0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+    50% { transform: translateY(-20px) rotate(5deg); opacity: 1; }
+  }
+}
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
