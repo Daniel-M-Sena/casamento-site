@@ -31,7 +31,7 @@ export default function Hero() {
             <ImageWithFallback
               src={image}
               alt={`Foto do casal ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full object-cover h-[45vh] md:h-full"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
           </div>
@@ -71,4 +71,5 @@ export default function Hero() {
     </div>
   );
 }
+
 
