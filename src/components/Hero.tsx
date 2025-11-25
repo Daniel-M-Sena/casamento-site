@@ -17,8 +17,12 @@ export default function Hero() {
     return () => clearInterval(timer);
   }, []);
 
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+  };
+
   return (
-    <div className="relative h-[40vh] md:h-screen mt-16">
+    <div className="relative h-screen mt-16">
       {/* Carousel */}
       <div className="relative h-full overflow-hidden">
         {carouselImages.map((image, index) => (
@@ -38,7 +42,7 @@ export default function Hero() {
         ))}
 
         {/* Dots Indicator */}
-        <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
           {carouselImages.map((_, index) => (
             <button
               key={index}
@@ -56,13 +60,13 @@ export default function Hero() {
         {/* Overlay Content */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-7xl mb-2 md:mb-4 animate-fade-in">
+            <h1 className="text-5xl md:text-7xl mb-4 animate-fade-in">
               Stella & Daniel
             </h1>
-            <p className="text-lg md:text-3xl mb-4 md:mb-8 opacity-90">
+            <p className="text-xl md:text-3xl mb-8 opacity-90">
               20 de Junho de 2026
             </p>
-            <div className="inline-block px-6 py-2 md:px-8 md:py-3 bg-white/20 backdrop-blur-sm rounded-full">
+            <div className="inline-block px-8 py-3 bg-white/20 backdrop-blur-sm rounded-full">
               Celebre conosco o nosso amor
             </div>
           </div>
@@ -71,4 +75,3 @@ export default function Hero() {
     </div>
   );
 }
-
