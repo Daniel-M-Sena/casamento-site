@@ -3,9 +3,9 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const carouselImages = [
-  'public/img/carrossel/foto1.jpeg',
-  'public/img/carrossel/foto2.jpeg',
-  'public/img/carrossel/foto3.jpeg',
+  '/img/carrossel/foto1.jpeg',
+  '/img/carrossel/foto2.jpeg',
+  '/img/carrossel/foto3.jpeg',
 ];
 
 export default function Hero() {
