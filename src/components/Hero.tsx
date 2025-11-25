@@ -30,10 +30,10 @@ export default function Hero() {
     <div
       className="
         relative
-        h-[65vh]       /* altura mobile */
-        sm:h-[75vh]    /* altura tablets pequenos */
-        md:h-[85vh]    /* altura tablets grandes */
-        lg:h-screen    /* desktop igual antes */
+        h-[70vh]
+        sm:h-[80vh]
+        md:h-[90vh]
+        lg:h-screen
         mt-16
       "
     >
@@ -71,23 +71,20 @@ export default function Hero() {
           <ChevronRight className="w-6 h-6 text-gray-800" />
         </button>
 
-        {/* Dots Indicator */}
+        {/* Dots */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
           {carouselImages.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide
-                  ? 'bg-white w-8'
-                  : 'bg-white/50 hover:bg-white/75'
+                index === currentSlide ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/75'
               }`}
-              aria-label={`Ir para foto ${index + 1}`}
             />
           ))}
         </div>
 
-        {/* Overlay Content */}
+        {/* Text overlay */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="text-4xl md:text-7xl mb-4 animate-fade-in">
