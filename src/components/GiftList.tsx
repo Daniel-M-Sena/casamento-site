@@ -40,13 +40,14 @@ const gifts: Gift[] = [
   { id: 28, name: 'Panela de Pressão', image: '/img/PANELA_DE_PRESSAO.webp' },
 ];
 
-export default function GiftList({'1
+export default function GiftList({
   onBack,
   selectedGifts,
   setSelectedGifts,
   reservedGifts,
   onReserveGifts
 }) {
+
   const [step, setStep] = useState('selecting');
 
   const availableGifts = gifts.filter((gift) => !reservedGifts.includes(gift.id));
