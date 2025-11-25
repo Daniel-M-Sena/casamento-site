@@ -18,7 +18,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative h-[60vh] md:h-screen mt-16">
+    <div className="relative h-[40vh] md:h-screen mt-16">
       {/* Carousel */}
       <div className="relative h-full overflow-hidden">
         {carouselImages.map((image, index) => (
@@ -31,7 +31,7 @@ export default function Hero() {
             <ImageWithFallback
               src={image}
               alt={`Foto do casal ${index + 1}`}
-              className="w-full object-cover h-[45vh] md:h-full"
+              className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
           </div>
@@ -71,5 +71,4 @@ export default function Hero() {
     </div>
   );
 }
-
 
