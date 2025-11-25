@@ -3,9 +3,9 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const carouselImages = [
-  'src/components/ui/img/WhatsApp Image 2025-11-17 at 08.53.57.jpeg',
-  'src/components/ui/img/WhatsApp Image 2025-11-17 at 09.58.23.jpeg',
-  'src/components/ui/img/WhatsApp Image 2025-11-17 at 09.40.02.jpeg',
+  'public/img/carrossel/foto1.jpeg',
+  'public/img/carrossel/foto2.jpeg',
+  'public/img/carrossel/foto3.jpeg',
 ];
 
 export default function Hero() {
