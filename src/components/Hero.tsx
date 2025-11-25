@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const carouselImages = [
@@ -22,10 +21,6 @@ export default function Hero() {
     setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
   };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
-  };
-
   return (
     <div className="relative h-screen mt-16">
       {/* Carousel */}
@@ -45,22 +40,6 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
           </div>
         ))}
-
-        {/* Navigation Buttons */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
-          aria-label="Foto anterior"
-        >
-          <ChevronLeft className="w-6 h-6 text-gray-800" />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
-          aria-label="Próxima foto"
-        >
-          <ChevronRight className="w-6 h-6 text-gray-800" />
-        </button>
 
         {/* Dots Indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
@@ -96,4 +75,3 @@ export default function Hero() {
     </div>
   );
 }
-
