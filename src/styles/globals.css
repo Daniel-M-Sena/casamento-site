@@ -112,6 +112,12 @@
   --color-pearl: var(--pearl);
 }
 
+@layer base {
+  :where(*) {
+    border-color: var(--border);
+    outline-color: color-mix(in srgb, var(--ring), transparent 50%);
+  }
+}
 
   body {
     @apply bg-background text-foreground;
