@@ -17,47 +17,42 @@ export default function Hero() {
     return () => clearInterval(timer);
   }, []);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
-  };
-
   return (
-    <div className="relative h-screen mt-16">
+    <div className="relative w-full mt-16">
       {/* Carousel */}
-      <div className="relative h-full overflow-hidden">
+      <div className="relative w-full max-h-[90vh] overflow-hidden">
         {carouselImages.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
+            className={`absolute inset-0 flex items-center justify-center transition-opacity duration-1000 ${
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
           >
             <ImageWithFallback
               src={image}
               alt={`Foto do casal ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-auto max-h-[90vh] object-contain"
             />
+
+            {/* Gradiente */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
           </div>
         ))}
 
-        {/* Dots Indicator */}
+        {/* Dots */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
           {carouselImages.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide 
-                  ? 'bg-white w-8' 
-                  : 'bg-white/50 hover:bg-white/75'
+                index === currentSlide ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/75'
               }`}
-              aria-label={`Ir para foto ${index + 1}`}
             />
           ))}
         </div>
 
-        {/* Overlay Content */}
+        {/* Overlay */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="text-5xl md:text-7xl mb-4 animate-fade-in">
