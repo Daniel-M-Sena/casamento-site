@@ -8,23 +8,19 @@ export function ImageWithFallback(
 ) {
   const [didError, setDidError] = useState(false);
 
-  const { src, alt, className = "", style = {}, ...rest } = props;
+  const { src, alt, className = "", style, ...rest } = props;
+
+  const commonClass = `block ${className}`.trim();
 
   return (
     <img
-      src={didError ? ERROR_IMG_SRC : src}
+      src={didError ? ERROR_IMG_SRC : (src as string)}
       alt={alt}
-      className={className}
-      style={{
-        width: "100%",
-        height: "auto",
-        objectFit: "contain",
-        ...style,
-      }}
+      className={commonClass}
+      style={style}
       onError={() => setDidError(true)}
       {...rest}
     />
   );
 }
-
 
