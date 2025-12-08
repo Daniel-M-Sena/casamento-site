@@ -21,8 +21,8 @@ export default function Hero() {
     <div
       className="
         relative
-        h-[60vh]         /* Altura menor no celular */
-        md:h-screen      /* Altura cheia no notebook */
+        h-[60vh]       
+        md:h-screen   
         mt-16
       "
     >
