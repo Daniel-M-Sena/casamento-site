@@ -18,7 +18,14 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative h-screen mt-16">
+    <div
+      className="
+        relative
+        h-[60vh]         /* Altura menor no celular */
+        md:h-screen      /* Altura cheia no notebook */
+        mt-16
+      "
+    >
       <div className="relative h-full overflow-hidden">
         {carouselImages.map((image, index) => (
           <div
@@ -27,28 +34,30 @@ export default function Hero() {
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            {/* CONTAINER QUE GARANTE QUE A IMAGEM NÃO SOME */}
-            <div className="w-full h-full flex items-center justify-center bg-black">
-              <ImageWithFallback
-                src={image}
-                alt={`Foto do casal ${index + 1}`}
-                className="max-h-full max-w-full object-contain"
-              />
-            </div>
+            <ImageWithFallback
+              src={image}
+              alt={`Foto do casal ${index + 1}`}
+              className="
+                w-full h-full
+                object-contain     /* Mobile não corta */
+                md:object-cover    /* Notebook preenche */
+              "
+            />
 
+            {/* Gradiente escurecendo */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
           </div>
         ))}
 
-        {/* Dots Indicator */}
+        {/* Indicadores (bolinhas) */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
           {carouselImages.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide 
-                  ? 'bg-white w-8' 
+                index === currentSlide
+                  ? 'bg-white w-8'
                   : 'bg-white/50 hover:bg-white/75'
               }`}
               aria-label={`Ir para foto ${index + 1}`}
@@ -56,7 +65,7 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Overlay Content */}
+        {/* Texto central */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="text-5xl md:text-7xl mb-4 animate-fade-in">
@@ -70,6 +79,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );
