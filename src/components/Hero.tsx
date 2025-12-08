@@ -20,11 +20,11 @@ export default function Hero() {
   return (
     <div
       className="
-        relative 
+        relative
         mt-16
-        h-[60vh]       
-        md:h-screen     
-        overflow-hidden  
+        h-[60vh]
+        md:h-screen
+        overflow-hidden
       "
     >
       {carouselImages.map((image, index) => (
@@ -39,9 +39,9 @@ export default function Hero() {
             alt={`Foto do casal ${index + 1}`}
             className="
               w-full h-full
-              object-contain      
-              md:object-cover     
-              bg-black            
+              object-contain
+              md:object-cover
+              bg-black
             "
           />
 
@@ -74,12 +74,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
-  );
-}
 
-
-      </div>
     </div>
   );
 }
