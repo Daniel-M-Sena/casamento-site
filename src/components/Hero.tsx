@@ -19,8 +19,10 @@ export default function Hero() {
 
   return (
     <div className="relative mt-16 w-full">
-      <div className="relative w-full overflow-hidden">
+      {/* OBRIGATÓRIO → garante altura no mobile */}
+      <div className="relative w-full overflow-hidden min-h-[300px] md:min-h-screen">
 
+        {/* SLIDES */}
         {carouselImages.map((image, index) => (
           <div
             key={index}
@@ -32,16 +34,17 @@ export default function Hero() {
               src={image}
               alt={`Foto do casal ${index + 1}`}
               className="
-                w-full 
-                h-auto 
-                object-contain 
+                w-full
+                h-auto
+                object-contain
+
                 md:h-screen 
-                md:object-cover 
+                md:object-cover
                 bg-black
               "
             />
 
-            {/* CAMADA DE GRADIENTE ‒ ajustada para acompanhar a imagem */}
+            {/* GRADIENTE */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50 pointer-events-none" />
           </div>
         ))}
@@ -59,7 +62,7 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* TEXTO CENTRAL */}
+        {/* TEXTO SOBREPOSTO */}
         <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
           <div className="text-center text-white px-4">
             <h1 className="text-5xl md:text-7xl mb-4 animate-fade-in">
@@ -78,3 +81,4 @@ export default function Hero() {
     </div>
   );
 }
+
