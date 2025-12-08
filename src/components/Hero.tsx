@@ -22,9 +22,9 @@ export default function Hero() {
       className="
         relative 
         mt-16
-        h-[60vh]        /* mobile */
-        md:h-screen     /* desktop */
-        overflow-hidden  /* importante! */
+        h-[60vh]       
+        md:h-screen     
+        overflow-hidden  
       "
     >
       {carouselImages.map((image, index) => (
@@ -39,18 +39,16 @@ export default function Hero() {
             alt={`Foto do casal ${index + 1}`}
             className="
               w-full h-full
-              object-contain      /* mobile não corta */
-              md:object-cover     /* desktop preenche */
-              bg-black            /* evita fundo branco quando tiver espaço */
+              object-contain      
+              md:object-cover     
+              bg-black            
             "
           />
 
-          {/* gradiente */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
         </div>
       ))}
 
-      {/* bolinhas */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
         {carouselImages.map((_, index) => (
           <button
@@ -63,7 +61,6 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* texto */}
       <div className="absolute inset-0 flex items-center justify-center z-20">
         <div className="text-center text-white px-4">
           <h1 className="text-5xl md:text-7xl mb-4 animate-fade-in">
