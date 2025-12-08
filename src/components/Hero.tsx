@@ -18,7 +18,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative h-screen mt-16">
+    <div className="relative h-[60vh] md:h-screen mt-16">
       <div className="relative h-full overflow-hidden">
         {carouselImages.map((image, index) => (
           <div
