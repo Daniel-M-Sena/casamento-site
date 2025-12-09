@@ -121,7 +121,7 @@ export default function Hero() {
         {/* Texto sobreposto */}
         <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
           <div className="text-center text-white px-4">
-            <h1 className="text-5xl md:text-7xl mb-4">Stella & Daniel</h1>
+            <h1 className="text-3xl md:text-7xl mb-4">Stella & Daniel</h1>
             <p className="text-xl md:text-3xl mb-8 opacity-90">20 de Junho de 2026</p>
             <div className="inline-block px-8 py-3 bg-white/20 backdrop-blur-sm rounded-full">
               Celebre conosco o nosso amor
