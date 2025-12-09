@@ -37,7 +37,11 @@ const gifts: Gift[] = [
   { id: 25, name: 'Aspirador de Pó', image: '/img/ASPIRADOR_DE_PO.webp' },
   { id: 26, name: 'Fogão', image: '/img/FOGAO.webp' },
   { id: 27, name: 'Máquina de Lavar Roupas', image: '/img/MAQUINA_DE_LAVAR_ROUPAS.jpg' },
-  { id: 28, name: 'Panela de Pressão', image: '/img/PANELA_DE_PRESSAO.webp' },
+  { id: 28, name: 'Jogo de Talheres', image: '/img/JOGO_DE_TALHERES.webp' },
+  { id: 29, name: 'Jogo de Copos', image: '/img/JOGO_DE_COPOS.webp' },
+  { id: 30, name: 'Jogo de Prato', image: '/img/JOGO_DE_PRATOS.jpg' },
+  { id: 31, name: 'Jogo de Cama', image: '/img/JOGO_DE_CAMA.webp' },
+  { id: 32, name: 'Edredom Casal', image: '/img/EDREDOM_CASAL.jpg' },
 ];
 
 export default function GiftList({
