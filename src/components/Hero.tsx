@@ -94,9 +94,9 @@ export default function Hero() {
                 block
                 w-full
                 h-auto
-                object-contain
-                md:h-full
-                md:object-cover
+                object-cover
+                scale-110
+                md:scale-100
                 bg-black
               "
             />
