@@ -95,7 +95,7 @@ export default function Hero() {
                 w-full
                 h-auto
                 object-cover
-                scale-110
+                scale-125
                 md:scale-100
                 bg-black
               "
