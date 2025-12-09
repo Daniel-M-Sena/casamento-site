@@ -123,7 +123,7 @@ export default function Hero() {
           <div className="text-center text-white px-4">
             <h1 className="text-3xl md:text-7xl mb-4">Stella & Daniel</h1>
             <p className="text-xl md:text-3xl mb-8 opacity-90">20 de Junho de 2026</p>
-            <div className="inline-block px-8 py-3 bg-white/20 backdrop-blur-sm rounded-full">
+            <div className="inline-block px-8 py-3 bg-white/20 backdrop-blur-sm rounded-full text-sm sm:text-base">
               Celebre conosco o nosso amor
             </div>
           </div>
