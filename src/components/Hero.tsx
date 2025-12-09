@@ -68,9 +68,7 @@ export default function Hero() {
   // estilo inline para o wrapper: se desktop -> 100vh, senão usa calculatedHeightPx (ou fallback)
   const wrapperStyle: React.CSSProperties = isDesktop
     ? { height: '100vh' }
-    : calculatedHeightPx
-    ? { height: `${calculatedHeightPx}px` }
-    : { minHeight: '160px' }; // fallback enquanto imagem carrega
+    : { height: '300px' }
 
   return (
     <div className="relative mt-16 w-full">
