@@ -42,7 +42,7 @@ const gifts: Gift[] = [
   { id: 30, name: 'Jogo de Prato', image: '/img/JOGO_DE_PRATOS2.webp' },
   { id: 31, name: 'Jogo de Cama', image: '/img/JOGO_DE_CAMA.webp' },
   { id: 32, name: 'Edredom Casal', image: '/img/EDREDOM_CASAL.jpg' },
-  { id: 33, name: 'Travessa de Vidro', image: '/img/TRAVESSA_DE_VIDRO.webp' },
+  { id: 33, name: 'Travessa de Vidro', image: '/img/TRAVESSA_DE _VIDRO.webp' },
   { id: 34, name: 'Cuscuizeira', image: '/img/CUSCUIZEIRA.jpg' },
 ];
 
