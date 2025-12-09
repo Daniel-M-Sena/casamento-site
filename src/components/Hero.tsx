@@ -5,7 +5,6 @@ const carouselImages = [
   '/img/carrossel/foto1.jpeg',
   '/img/carrossel/foto2.jpg',
   '/img/carrossel/foto3.jpg',
-  '/img/carrossel/foto4.jpg',
 ];
 
 export default function Hero() {
