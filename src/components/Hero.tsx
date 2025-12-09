@@ -93,7 +93,7 @@ export default function Hero() {
               className="
                 block
                 w-full
-                h-auto
+                h-full
                 object-cover
                 scale-125
                 md:scale-100
