@@ -18,7 +18,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative h-screen md:h-screen h-[60vh] mt-16">
+    <div className="relative h-[60vh] md:h-screen mt-16">
       <div className="relative h-full min-h-[60vh] md:min-h-screen overflow-hidden">
         {carouselImages.map((image, index) => (
           <div
@@ -28,7 +28,7 @@ export default function Hero() {
             }`}
           >
             {/* CONTAINER QUE GARANTE QUE A IMAGEM NÃO SOME */}
-            <div className="w-full h-full flex items-center justify-center bg-black">
+            <div className="w-full h-full max-h-[60vh] md:max-h-screen flex items-center justify-center bg-black">
               <ImageWithFallback
                 src={image}
                 alt={`Foto do casal ${index + 1}`}
