@@ -18,8 +18,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative h-[300px] mt-16">
-      <div className="relative h-full overflow-hidden">
+    <div className="relative h-screen md:h-screen h-[60vh] mt-16">
+      <div className="relative h-full min-h-[60vh] md:min-h-screen overflow-hidden">
         {carouselImages.map((image, index) => (
           <div
             key={index}
