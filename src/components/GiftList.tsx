@@ -44,7 +44,7 @@ const gifts: Gift[] = [
   { id: 32, name: 'Edredom Casal', image: '/img/EDREDOM_CASAL.jpg' },
   { id: 33, name: 'Travessa de Vidro', image: '/img/TRAVESSA_DE _VIDRO.webp' },
   { id: 34, name: 'Cuscuizeira', image: '/img/CUSCUIZEIRA.jpg' },
-  { id: 35, name: 'Cuscuizeira', image: '/img/KIT_DE_CONCHAS_DE_SILICONE.webp' },
+  { id: 35, name: 'Kit Conchs de Silicone', image: '/img/KIT_DE_CONCHAS_DE_SILICONE.webp' },
 ];
 
 export default function GiftList({
