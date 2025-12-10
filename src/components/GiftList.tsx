@@ -45,6 +45,7 @@ const gifts: Gift[] = [
   { id: 33, name: 'Travessa de Vidro', image: '/img/TRAVESSA_DE _VIDRO.webp' },
   { id: 34, name: 'Cuscuizeira', image: '/img/CUSCUIZEIRA.jpg' },
   { id: 35, name: 'Kit Conchs de Silicone', image: '/img/KIT_DE_CONCHAS_DE_SILICONE.webp' },
+  { id: 36, name: 'Travesseiros', image: '/img/TRAVESSEIROS.jpg' },
 ];
 
 export default function GiftList({
