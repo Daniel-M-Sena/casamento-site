@@ -21,7 +21,7 @@ const gifts: Gift[] = [
   { id: 9, name: 'Pix para Primeira Compra de Mercado', image: '/img/pix.jpg' },
   { id: 10, name: 'Jogo de Cama', image: '/img/JOGO_DE_CAMA.webp' },
   { id: 11, name: 'Jogo de Copos', image: '/img/JOGO_DE_COPOS.webp' },
-  { id: 12, name: 'Jogo de Taças', image: '/img/JOGO_DE_TACAS.jpg' },
+  { id: 12, name: 'Fogão', image: '/img/FOGAO.webp' },
   { id: 13, name: 'Jogo de Xícaras', image: '/img/JOGO_DE_XICARAS.webp' },
   { id: 14, name: 'Kit de Sobremesa', image: '/img/JOGO_DE_SOBREMESA.jpg' },
   { id: 15, name: 'Jogo de Pano de Prato', image: '/img/JOGO_DE_PANO_DE_PRATO.webp' },
@@ -37,7 +37,7 @@ const gifts: Gift[] = [
   { id: 25, name: 'Cortinas', image: '/img/CORTINAS.jpg' },
   { id: 26, name: 'Televisão', image: '/img/TELEVISAO.jpg' },
   { id: 27, name: 'Aspirador de Pó', image: '/img/ASPIRADOR_DE_PO.webp' },
-  { id: 28, name: 'Fogão', image: '/img/FOGAO.webp' },
+  { id: 28, name: 'Pix para a Lua de Mel', image: '/img/pix2.jpg' },
   { id: 29, name: 'Máquina de Lavar Roupas', image: '/img/MAQUINA_DE_LAVAR_ROUPAS.jpg' },
   { id: 30, name: 'Jogo de Talheres', image: '/img/JOGO_TALHERES2.webp' },
   { id: 31, name: 'Jogo de Copos', image: '/img/JOGO_DE_COPOS.webp' },
@@ -50,6 +50,11 @@ const gifts: Gift[] = [
   { id: 38, name: 'Kit Conchas de Silicone', image: '/img/KIT_DE_CONCHAS_DE_SILICONE.webp' },
   { id: 39, name: 'Travesseiros', image: '/img/TRAVESSEIROS.jpg' },
   { id: 40, name: 'Pix para Lua de Mel', image: '/img/pix4.jpg' },
+  { id: 41, name: 'Sofá', image: '/img/SOFA.jpg' },
+  { id: 42, name: 'Mesa de Jantar', image: '/img/MESA.jpg' },
+  { id: 43, name: 'Pix para Primeira Compra de Mercado', image: '/img/pix.jpg' },
+  { id: 44, name: 'Jogo de Taças', image: '/img/JOGO_DE_TACAS.jpg' },
+  
 ];
 
 export default function GiftList({
