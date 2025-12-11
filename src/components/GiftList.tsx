@@ -18,7 +18,7 @@ const gifts: Gift[] = [
   { id: 6, name: 'Jogo de Prato', image: '/img/JOGO_DE_PRATOS.jpg' },
   { id: 7, name: 'Jogo de Talheres', image: '/img/JOGO_DE_TALHERES.webp' },
   { id: 8, name: 'Ferro de Passar', image: '/img/FERRO_DE_PASSAR.webp' },
-  { id: 9, name: 'Pix pra Ajudar nas Despesas', image: '/img/pix.jpg' },
+  { id: 9, name: 'Pix para Primeira Compra', image: '/img/pix.jpg' },
   { id: 10, name: 'Jogo de Cama', image: '/img/JOGO_DE_CAMA.webp' },
   { id: 11, name: 'Jogo de Copos', image: '/img/JOGO_DE_COPOS.webp' },
   { id: 12, name: 'Jogo de Taças', image: '/img/JOGO_DE_TACAS.jpg' },
@@ -42,7 +42,7 @@ const gifts: Gift[] = [
   { id: 30, name: 'Jogo de Talheres', image: '/img/JOGO_TALHERES2.webp' },
   { id: 31, name: 'Jogo de Copos', image: '/img/JOGO_DE_COPOS.webp' },
   { id: 32, name: 'Jogo de Prato', image: '/img/JOGO_DE_PRATOS2.webp' },
-  { id: 33, name: 'Pix pra Ajudar nas Despesas', image: '/img/pix3.jpg' },
+  { id: 33, name: 'Pix para Primeira Compra', image: '/img/pix3.jpg' },
   { id: 34, name: 'Jogo de Cama', image: '/img/JOGO_DE_CAMA.webp' },
   { id: 35, name: 'Edredom Casal', image: '/img/EDREDOM_CASAL.jpg' },
   { id: 36, name: 'Travessa de Vidro', image: '/img/TRAVESSA_DE _VIDRO.webp' },
@@ -85,7 +85,7 @@ export default function GiftList({
   };
 
   const handleWhatsApp = () => {
-    window.open('https://w.app/p6kn51', '_blank');
+    window.open('https://api.whatsapp.com/send/?phone=5563992939653&text=Ol%C3%A1%2C+Gostaria+de+falar+sobre+o+presente+de+casamento%21&type=phone_number&app_absent=0', '_blank');
   };
 
   const resetAndGoBack = () => {
