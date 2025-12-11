@@ -19,7 +19,7 @@ const gifts = [
   { id: 9, name: 'Pix para Primeira Compra'},
   { id: 10, name: 'Jogo de Cama'},
   { id: 11, name: 'Jogo de Copos'},
-  { id: 12, name: 'Jogo de Taças'},
+  { id: 12, name: 'Fogão'},
   { id: 13, name: 'Jogo de Xícaras'},
   { id: 14, name: 'Kit de Sobremesa'},
   { id: 15, name: 'Jogo de Pano de Prato'},
@@ -35,7 +35,7 @@ const gifts = [
   { id: 25, name: 'Cortinas'},
   { id: 26, name: 'Televisão'},
   { id: 27, name: 'Aspirador de Pó'},
-  { id: 28, name: 'Fogão', image: '/img/FOGAO.webp' },
+  { id: 28, name: 'Pix para Lua de Mel'},
   { id: 29, name: 'Máquina de Lavar Roupas'},
   { id: 30, name: 'Jogo de Talheres'},
   { id: 31, name: 'Jogo de Copos'},
@@ -48,6 +48,10 @@ const gifts = [
   { id: 38, name: 'Kit Conchas de Silicone'},
   { id: 39, name: 'Travesseiros'},
   { id: 40, name: 'Pix pra Lua de Mel'},
+  { id: 41, name: 'Sofá'},
+  { id: 42, name: 'Mesa de Jantar'},
+  { id: 43, name: 'Pix para Primeira Compra de Mercado'},
+  { id: 44, name: 'Jogo de Taças'},
 ];
 
 export default function App() {
