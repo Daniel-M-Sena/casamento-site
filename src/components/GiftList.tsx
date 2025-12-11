@@ -47,7 +47,7 @@ const gifts: Gift[] = [
   { id: 35, name: 'Edredom Casal', image: '/img/EDREDOM_CASAL.jpg' },
   { id: 36, name: 'Travessa de Vidro', image: '/img/TRAVESSA_DE _VIDRO.webp' },
   { id: 37, name: 'Cuscuizeira', image: '/img/CUSCUIZEIRA.jpg' },
-  { id: 38, name: 'Kit Conchs de Silicone', image: '/img/KIT_DE_CONCHAS_DE_SILICONE.webp' },
+  { id: 38, name: 'Kit Conchas de Silicone', image: '/img/KIT_DE_CONCHAS_DE_SILICONE.webp' },
   { id: 39, name: 'Travesseiros', image: '/img/TRAVESSEIROS.jpg' },
   { id: 40, name: 'Pix pra Lua de Mel', image: '/img/pix4.jpg' },
 ];
