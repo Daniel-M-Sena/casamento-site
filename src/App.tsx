@@ -45,7 +45,7 @@ const gifts = [
   { id: 35, name: 'Edredom Casal'},
   { id: 36, name: 'Travessa de Vidro'},
   { id: 37, name: 'Cuscuizeira'},
-  { id: 38, name: 'Kit Conchs de Silicone'},
+  { id: 38, name: 'Kit Conchas de Silicone'},
   { id: 39, name: 'Travesseiros'},
   { id: 40, name: 'Pix pra Lua de Mel'},
 ];
