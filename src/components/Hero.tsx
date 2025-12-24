@@ -2,7 +2,6 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const carouselImages = [
-  '/img/carrossel/pedido3.jpg',
   '/img/carrossel/foto1.jpeg',
   '/img/carrossel/pedido1.jpg',
   '/img/carrossel/foto8.jpg',
