@@ -53,6 +53,10 @@ const gifts = [
   { id: 43, name: 'Pix para Primeira Compra de Mercado'},
   { id: 44, name: 'Jogo de Taças'},
   { id: 45, name: 'Escorredor de Louças'},
+  { id: 46, name: 'Forma de Bolo'},
+  { id: 47, name: 'Espelho'},
+  { id: 48, name: 'Jogo de Prato'},
+  { id: 49, name: 'Pix para Primeira Compra de Mercado'},
 ];
 
 export default function App() {
