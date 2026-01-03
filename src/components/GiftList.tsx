@@ -57,7 +57,7 @@ const gifts: Gift[] = [
   { id: 45, name: 'Escorredor de Louças', image: '/img/ESCORREDOR_DE_PRATO.webp' },
   { id: 46, name: 'Forma de Bolo', image: '/img/FORMADEBOLO.jpg' },
   { id: 47, name: 'Espelho', image: '/img/ESPELHO.jpeg' },
-  { id: 48, name: 'Escorredor de Louças', image: '/img/ESCORREDOR_DE_PRATO.webp' },
+  { id: 48, name: 'Jogo de Prato', image: '/img/JOGO_DE_PRATOS2.webp' },
   { id: 49, name: 'Pix para Primeira Compra de Mercado', image: '/img/pix.jpg'  },
   
 ];
