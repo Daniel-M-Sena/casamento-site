@@ -60,6 +60,7 @@ const gifts: Gift[] = [
   { id: 48, name: 'Jogo de Prato', image: '/img/JOGO_DE_PRATOS2.webp' },
   { id: 49, name: 'Pix para Primeira Compra de Mercado', image: '/img/pix.jpg'  },
   { id: 50, name: 'Air Fryer', image: '/img/AIRFRYER.webp'  },
+  { id: 51, name: 'Kit Formas de Bolo', image: '/img/KITFORMAS.webp'  },
   
 ];
 
