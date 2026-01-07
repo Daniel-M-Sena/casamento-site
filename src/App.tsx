@@ -6,7 +6,7 @@ import RSVP from './components/RSVP';
 import GiftList from './components/GiftList';
 import { supabase } from './supabaseClient';
 
-// 🔥 Lista de presentes para pegar gift_name
+// 🔥 Lista de presentes (para mapear nome)
 const gifts = [
   { id: 1, name: 'Jogo de Panelas'},
   { id: 2, name: 'Edredom Casal'},
@@ -68,22 +68,23 @@ export default function App() {
   const [selectedGifts, setSelectedGifts] = useState([]);
   const [reservedGifts, setReservedGifts] = useState([]);
 
+  // 🔄 Carrega presentes já reservados
   useEffect(() => {
-    const load = async () => {
-      const { data } = await supabase.from('gift_list').select('gift_id');
+    const loadReservedGifts = async () => {
+      const { data } = await supabase
+        .from('gift_list')
+        .select('gift_id');
+
       if (data) {
-        setReservedGifts(data.map(r => r.gift_id));
+        setReservedGifts(data.map(item => item.gift_id));
       }
     };
-    load();
+
+    loadReservedGifts();
   }, []);
 
-  // 🔥 AGORA RECEBE deliveryMethod TAMBÉM
+  // ✅ RESERVA SEM EXIGIR CONFIRMAÇÃO DE PRESENÇA
   const handleGiftReservation = async (giftIds, deliveryMethod) => {
-    if (!currentGuest) {
-      alert("Você precisa confirmar presença antes de reservar presentes.");
-      return;
-    }
 
     const rows = giftIds.map((giftId) => {
       const gift = gifts.find(g => g.id === giftId);
@@ -91,29 +92,31 @@ export default function App() {
       return {
         gift_id: giftId,
         gift_name: gift?.name || null,
-        id_pessoa: currentGuest.id,
-        select_by: currentGuest.name,
+        id_pessoa: currentGuest?.id || null,
+        select_by: currentGuest?.name || 'Convidado',
         delivery_method: deliveryMethod,
         selected_at: new Date().toISOString()
       };
     });
 
-    const { error } = await supabase.from('gift_list').insert(rows);
+    const { error } = await supabase
+      .from('gift_list')
+      .insert(rows);
 
     if (error) {
-      console.log(error);
+      console.error(error);
       alert('Erro ao reservar presentes.');
       return;
     }
 
-    setReservedGifts([...reservedGifts, ...giftIds]);
+    setReservedGifts(prev => [...prev, ...giftIds]);
     setSelectedGifts([]);
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 via-white to-rose-50">
       <Navbar 
-        onNavigate={(sectionId) => setCurrentPage('home')}
+        onNavigate={() => setCurrentPage('home')}
         onGiftListClick={() => setCurrentPage('gifts')}
         currentPage={currentPage}
       />
@@ -122,6 +125,7 @@ export default function App() {
         <>
           <section id="inicio"><Hero /></section>
           <section id="nossa-historia"><OurStory /></section>
+
           <section id="confirmacao">
             <RSVP onSubmit={(guest) => setCurrentGuest(guest)} />
           </section>
