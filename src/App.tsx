@@ -83,21 +83,16 @@ export default function App() {
     load();
   }, []);
 
-  // ❗ RESERVA SOMENTE COM PRESENÇA CONFIRMADA
+  // ✅ RESERVA DE PRESENTES (SEM EXIGIR CONFIRMAÇÃO DE PRESENÇA)
   const handleGiftReservation = async (giftIds, deliveryMethod) => {
-    if (!currentGuest) {
-      alert('Você precisa confirmar presença antes de reservar presentes.');
-      return;
-    }
-
     const rows = giftIds.map((giftId) => {
       const gift = gifts.find(g => g.id === giftId);
 
       return {
         gift_id: giftId,
         gift_name: gift?.name || null,
-        id_pessoa: currentGuest.id,
-        select_by: currentGuest.name,
+        id_pessoa: currentGuest?.id || null,
+        select_by: currentGuest?.name || 'Convidado',
         delivery_method: deliveryMethod,
         selected_at: new Date().toISOString()
       };
@@ -162,4 +157,3 @@ export default function App() {
     </div>
   );
 }
-
