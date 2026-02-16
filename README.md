@@ -1,11 +1,16 @@
 
   # Site para Assistência Técnica de Celular
 
-  This is a code bundle for Site para Assistência Técnica de Celular. The original project is available at https://www.figma.com/design/lFQ7Y4jdsw6RdNsLUle16v/Site-para-Assist%C3%AAncia-T%C3%A9cnica-de-Celular.
+🚀 Sobre o Projeto
 
-  ## Running the code
+Este é um projeto web desenvolvido com React + TypeScript, estruturado em componentes reutilizáveis e com integração ao Supabase. A aplicação possui seções como navegação, hero, lista de presentes, história, RSVP e diretrizes.
+O projeto segue uma arquitetura organizada, escalável e focada em performance e experiência do usuário.
 
-  Run `npm i` to install the dependencies.
+🛠️ Tecnologias Utilizadas
 
-  Run `npm run dev` to start the development server.
-  
+- React
+- TypeScript
+- Vite (ou outro bundler — ajuste se necessário)
+- CSS
+- Supabase
+- Componentização modular
