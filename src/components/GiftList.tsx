@@ -61,6 +61,11 @@ const gifts: Gift[] = [
   { id: 49, name: 'Pix para Primeira Compra de Mercado', image: '/img/pix.jpg'  },
   { id: 50, name: 'Air Fryer', image: '/img/AIRFRYER.webp'  },
   { id: 51, name: 'Kit Formas de Bolo', image: '/img/KITFORMAS.webp'  },
+  { id: 52, name: 'Paneleiro de Cozinha', image: '/img/PANELEITO_DE_COZINHA.jpeg'  },
+  { id: 53, name: 'Varal de Chão', image: '/img/VARAL_DE_CHAO.jpeg'  },
+  { id: 54, name: 'Tapete de Crochê', image: '/img/TAPETE_DE_CROCHE.jpeg'  },
+  { id: 55, name: 'Porta Tempero', image: '/img/PORTA_TEMPERO.jpeg'  },
+  { id: 56, name: 'Tábua de Passar com Armário', image: '/img/TABUA_DE_PASSAR_COM_ARMARIO.jpeg'  },
   
 ];
 
