@@ -64,7 +64,6 @@ const gifts = [
   { id: 54, name: 'Tapete de Crochê' },
   { id: 55, name: 'Porta Tempero' },
   { id: 56, name: 'Tábua de Passar com Armário' },
-  
 ];
 
 export default function App() {
@@ -74,7 +73,7 @@ export default function App() {
   const [selectedGifts, setSelectedGifts] = useState([]);
   const [reservedGifts, setReservedGifts] = useState([]);
 
-  // 🔄 Carrega presentes já reservados
+  // 🔄 Carrega presentes reservados
   useEffect(() => {
     const load = async () => {
       const { data } = await supabase
@@ -89,7 +88,23 @@ export default function App() {
     load();
   }, []);
 
-  // ✅ RESERVA DE PRESENTES (SEM EXIGIR CONFIRMAÇÃO DE PRESENÇA)
+  // 🔥 FUNÇÃO DE NAVEGAÇÃO (SCROLL)
+  const handleNavigate = (sectionId) => {
+    setCurrentPage('home');
+
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+    }, 100);
+  };
+
+  // ✅ RESERVA DE PRESENTES
   const handleGiftReservation = async (giftIds, deliveryMethod) => {
     const rows = giftIds.map((giftId) => {
       const gift = gifts.find(g => g.id === giftId);
@@ -121,7 +136,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 via-white to-rose-50">
       <Navbar
-        onNavigate={() => setCurrentPage('home')}
+        onNavigate={handleNavigate}
         onGiftListClick={() => setCurrentPage('gifts')}
         currentPage={currentPage}
       />
