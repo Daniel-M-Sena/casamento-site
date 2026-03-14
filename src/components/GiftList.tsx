@@ -66,8 +66,11 @@ const gifts: Gift[] = [
   { id: 54, name: 'Tapete de Crochê', image: '/img/TAPETE_DE_CROCHE.jpeg'  },
   { id: 55, name: 'Porta Tempero', image: '/img/PORTA_TEMPERO.jpeg'  },
   { id: 56, name: 'Tábua de Passar com Armário', image: '/img/TABUA_DE_PASSAR_COM_ARMARIO.jpeg'  },
+  { id: 57, name: 'Cortina', image: '/img/CORTINA.jpg'  },
   
 ];
+
+
 
 export default function GiftList({
   onBack,
