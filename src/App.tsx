@@ -49,7 +49,7 @@ const gifts = [
   { id: 39, name: "Travesseiros" },
   { id: 40, name: "Pix pra Lua de Mel" },
   { id: 41, name: "Sofá" },
-  { id: 42, name: "Mesa de Jantar" },
+  { id: 42, name: "Cama Box Casal" },
   { id: 43, name: "Pix para Primeira Compra de Mercado" },
   { id: 44, name: "Jogo de Taças" },
   { id: 45, name: "Escorredor de Louças" },
