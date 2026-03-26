@@ -64,6 +64,10 @@ const gifts = [
   { id: 54, name: "Tapete de Crochê" },
   { id: 55, name: "Porta Tempero" },
   { id: 56, name: "Tábua de Passar com Armário" },
+  { id: 57, name: 'Cortina'},
+  { id: 58, name: 'Churrasqueira'},
+  { id: 59, name: 'Conjunto de Assadeiras'},
+  { id: 60, name: 'Potes de Armazenamento'},
 ];
 
 export default function App() {
