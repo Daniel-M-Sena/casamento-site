@@ -67,6 +67,9 @@ const gifts: Gift[] = [
   { id: 55, name: 'Porta Tempero', image: '/img/PORTA_TEMPERO.jpeg'  },
   { id: 56, name: 'Tábua de Passar com Armário', image: '/img/TABUA_DE_PASSAR_COM_ARMARIO.jpeg'  },
   { id: 57, name: 'Cortina', image: '/img/CORTINA.jpg'  },
+  { id: 58, name: 'Churrasqueira', image: '/img/CHURRASQUEIRA.jpeg'  },
+  { id: 59, name: 'Conjunto de Assadeiras', image: '/img/ASSADEIRAS.jpeg'  },
+  { id: 60, name: 'Potes de Armazenamento', image: '/img/POTES.jpeg'  },
   
 ];
 
