@@ -49,7 +49,7 @@ const gifts: Gift[] = [
   { id: 37, name: 'Cuscuizeira', image: '/img/CUSCUIZEIRA.jpg' },
   { id: 38, name: 'Kit Conchas de Silicone', image: '/img/KIT_DE_CONCHAS_DE_SILICONE.webp' },
   { id: 39, name: 'Travesseiros', image: '/img/TRAVESSEIROS.jpg' },
-  { id: 40, name: 'Pix para Lua de Mel', image: '/img/pix4.jpg' },
+  { id: 40, name: 'Pix', image: '/img/pix4.jpg' },
   { id: 41, name: 'Sofá', image: '/img/SOFA.jpg' },
   { id: 42, name: 'Cama Box Casal', image: '/img/CAMA.jpg' },
   { id: 43, name: 'Pix para Primeira Compra de Mercado', image: '/img/pix.jpg' },
