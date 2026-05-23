@@ -69,7 +69,7 @@ const gifts: Gift[] = [
   { id: 58, name: 'Churrasqueira', image: '/img/CHURRASQUEIRA.jpeg'  },
   { id: 59, name: 'Conjunto de Assadeiras', image: '/img/ASSADEIRAS.jpeg'  },
   { id: 60, name: 'Potes de Armazenamento', image: '/img/POTES.jpeg'  },
-  { id: 61, name: 'Armario para Fogão 5 Bocas', image: '/img/COOKTOP.jpeg'  },
+  { id: 61, name: 'Armario para Fogão 5 Bocas', image: '/img/COOKTOP.jpg'  },
   { id: 62, name: 'Painel TV 43 Polegadas', image: '/img/PAINEL.webp'  },
   
 ];
