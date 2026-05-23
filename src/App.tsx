@@ -68,6 +68,8 @@ const gifts = [
   { id: 58, name: 'Churrasqueira'},
   { id: 59, name: 'Conjunto de Assadeiras'},
   { id: 60, name: 'Potes de Armazenamento'},
+  { id: 61, name: 'Armario para Fogão 5 Bocas'},
+  { id: 62, name: 'Painel TV 43 Polegadas'},
 ];
 
 export default function App() {
